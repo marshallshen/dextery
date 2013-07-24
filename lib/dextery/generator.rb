@@ -27,7 +27,7 @@ module Dextery
 
     def self.copy_bootstrap(path)
       Dextery.logger.info "Setup blog using bootstrap.. Start"
-      system( "cp -r lib/dextery/jekyll-bootstrap/ #{path}")
+      system( "cp -r lib/dextery/template/ #{path}")
       Dextery.logger.info "Setup blog using bootstrap.. Complete"
     end
 
