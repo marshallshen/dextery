@@ -4,7 +4,7 @@ require 'dextery'
 require 'commander/import'
 
 program :name, 'dextery'
-program :version, '0.0.3b'
+program :version, '0.0.3c'
 program :description, 'Blog engine based on Jekyll Bootstrap'
 
 default_command :help

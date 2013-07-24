@@ -6,7 +6,7 @@ require 'dextery'
 
 Gem::Specification.new do |spec|
   spec.name          = "dextery"
-  spec.version       = "0.0.3b"
+  spec.version       = "0.0.3c"
   spec.authors       = ["Marshall Shen"]
   spec.email         = ["mshen@groupon.com"]
   spec.description   = "Blog engine based on Jekyll Bootstrap"
