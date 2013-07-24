@@ -11,7 +11,7 @@ require 'commander/import'
 #You can add more executables as well in the bin directory if you need to,
 #there’s an executables array field on the gemspec.
 
-program :name, 'dexter'
+program :name, 'dextery'
 # program :version, Dexter::Version
 program :version, '0.0.1'
 program :description, 'A mock description'
@@ -25,8 +25,8 @@ default_command :help
 # global_option '--layouts', 'Layouts directory (defaults to ./_layouts)'
 
 command :new do |c|
-  c.syntax = 'dexter new [DIR]'
-  c.description = 'Creates a new Dexter site under the project name'
+  c.syntax = 'dextery new [DIR]'
+  c.description = 'Creates a new Dextery site under the project name'
 
   c.option '--force', 'Force creation even if PATH already exists'
 

@@ -5,8 +5,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dexter'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Dexter"
-  spec.version       = Dexter::VERSION
+  spec.name          = "Dextery"
+  spec.version       = Dextery::VERSION
   spec.authors       = ["Marshall Shen"]
   spec.email         = ["mshen@groupon.com"]
   spec.description   = "blog engine based on Jekyll Bootstrap"
