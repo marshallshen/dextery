@@ -9,7 +9,7 @@ Make sure you have *dextery* install:
 
 ### Released Version
 
-0.0.2
+0.0.3
 
 ### Dependencies
 
