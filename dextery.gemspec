@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.files << %w[
+    lib/dextery/template/404.html
     /lib/dextery/template/404.html
     /lib/dextery/template/_config.html
     /lib/dextery/template/archive.html
