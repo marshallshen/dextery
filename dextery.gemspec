@@ -24,17 +24,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-
-  spec.files << %w[
-    lib/dextery/template/404.html
-    /lib/dextery/template/404.html
-    /lib/dextery/template/_config.html
-    /lib/dextery/template/archive.html
-    /lib/dextery/template/atom.xml
-    /lib/dextery/template/categories.html
-    /lib/dextery/template/changelog.md
-    /lib/dextery/template/index.md
-    /lib/dextery/template/pages.html
-    /lib/dextery/template/Rakefile
-  ]
 end
