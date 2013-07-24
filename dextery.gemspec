@@ -6,7 +6,7 @@ require 'dextery'
 
 Gem::Specification.new do |spec|
   spec.name          = "dextery"
-  spec.version       = Dextery::VERSION
+  spec.version       = "0.0.2"
   spec.authors       = ["Marshall Shen"]
   spec.email         = ["mshen@groupon.com"]
   spec.description   = "Blog engine based on Jekyll Bootstrap"
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency('commander', "~> 4.1.3")
-  spec.add_runtime_dependency("Dextery", "~> 0.0.1")
+  spec.add_runtime_dependency("dextery", "~> 0.0.2")
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"

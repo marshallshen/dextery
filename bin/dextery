@@ -3,17 +3,8 @@ require 'rubygems'
 require 'dextery'
 require 'commander/import'
 
-# The Perl function unshift() is the opposite of the shift() function,
-# instead of removing a value from the front of an array, it adds values
-# to the front of an array.
-
-#Push up that new gem, and you’ll have your own command line utility published!
-#You can add more executables as well in the bin directory if you need to,
-#there’s an executables array field on the gemspec.
-
 program :name, 'dextery'
-# program :version, Dexter::Version
-program :version, Dextery::Version
+program :version, '0.0.2'
 program :description, 'Blog engine based on Jekyll Bootstrap'
 
 default_command :help
