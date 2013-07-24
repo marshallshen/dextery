@@ -1,6 +1,7 @@
-# Dexter
+# Dextery
 
-This is a Gemified wrapper of [Jekyll Boostrap](http://jekyllbootstrap.com/)
+Started as Gemified wrapper of [Jekyll Boostrap](http://jekyllbootstrap.com/)
+This is a project created during first Groupon Geekon tech conference
 
 ## Installation
 
@@ -16,9 +17,18 @@ Or install it yourself as:
 
     $ gem install dexter
 
+### Dependencies
+
+* Jekyll (~> 1.0.3)
+* Ruby (~> 1.9.3), Ruby 2.0 is preferred
+
 ## Usage
 
-TODO: Write usage instructions here
+* Make sure *dextery* are *jekyll* installed
+* run `dextery new [dir]`
+* cd to the dir
+* run `jekyll serve` (default port is 4000)
+* Go to `localhost:4000`, there is your new blog!
 
 ## Contributing
 

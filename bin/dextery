@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-#require 'dexter'
+require 'dextery'
 require 'commander/import'
 
 # The Perl function unshift() is the opposite of the shift() function,
@@ -13,16 +13,10 @@ require 'commander/import'
 
 program :name, 'dextery'
 # program :version, Dexter::Version
-program :version, '0.0.1'
-program :description, 'A mock description'
+program :version, Dextery::Version
+program :description, 'Blog engine based on Jekyll Bootstrap'
 
 default_command :help
-
-# global_option '-s', '--source [DIR]', 'Source directory (defaults to ./)'
-# global_option '-d', '--destination [DIR]', 'Destination directory (defaults to ./_site)'
-# global_option '--safe', 'Safe mode (defaults to false)'
-# global_option '-p', '--plugins PLUGINS_DIR1[,PLUGINS_DIR2[,...]]', Array, 'Plugins directory (defaults to ./_plugins)'
-# global_option '--layouts', 'Layouts directory (defaults to ./_layouts)'
 
 command :new do |c|
   c.syntax = 'dextery new [DIR]'
@@ -31,8 +25,6 @@ command :new do |c|
   c.option '--force', 'Force creation even if PATH already exists'
 
   c.action do |args, options|
-    # do something
-    puts "I am a very neat monster.. "
-    #Dexter::Generator.manifest(args, options.__hash__)
+    Dextery::Generator.manifest(args, options.__hash__)
   end
 end

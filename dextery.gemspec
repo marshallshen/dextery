@@ -2,16 +2,16 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'dexter'
+require 'dextery'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Dextery"
+  spec.name          = "dextery"
   spec.version       = Dextery::VERSION
   spec.authors       = ["Marshall Shen"]
   spec.email         = ["mshen@groupon.com"]
-  spec.description   = "blog engine based on Jekyll Bootstrap"
-  spec.summary       = "blog engine based on Jekyll Bootstrap"
-  spec.homepage      = "http://github.com/dexter"
+  spec.description   = "Blog engine based on Jekyll Bootstrap"
+  spec.summary       = "Blog engine based on Jekyll Bootstrap"
+  spec.homepage      = "https://github.com/marshallshen/dextery"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency('commander', "~> 4.1.3")
+  spec.add_runtime_dependency("Dextery", "~> 0.0.1")
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
