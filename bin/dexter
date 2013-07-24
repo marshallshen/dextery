@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+#require 'dexter'
+require 'commander/import'
+
+# The Perl function unshift() is the opposite of the shift() function,
+# instead of removing a value from the front of an array, it adds values
+# to the front of an array.
+
+#Push up that new gem, and you’ll have your own command line utility published!
+#You can add more executables as well in the bin directory if you need to,
+#there’s an executables array field on the gemspec.
+
+program :name, 'dexter'
+# program :version, Dexter::Version
+program :version, '0.0.1'
+program :description, 'A mock description'
+
+default_command :help
+
+# global_option '-s', '--source [DIR]', 'Source directory (defaults to ./)'
+# global_option '-d', '--destination [DIR]', 'Destination directory (defaults to ./_site)'
+# global_option '--safe', 'Safe mode (defaults to false)'
+# global_option '-p', '--plugins PLUGINS_DIR1[,PLUGINS_DIR2[,...]]', Array, 'Plugins directory (defaults to ./_plugins)'
+# global_option '--layouts', 'Layouts directory (defaults to ./_layouts)'
+
+command :new do |c|
+  c.syntax = 'dexter new [DIR]'
+  c.description = 'Creates a new Dexter site under the project name'
+
+  c.option '--force', 'Force creation even if PATH already exists'
+
+  c.action do |args, options|
+    # do something
+    puts "I am a very neat monster.. "
+    #Dexter::Generator.manifest(args, options.__hash__)
+  end
+end
