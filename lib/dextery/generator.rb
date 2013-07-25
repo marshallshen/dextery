@@ -5,7 +5,7 @@ module Dextery
 
       new_blog_path = File.expand_path(args.join(" "), Dir.pwd)
       if preserve_source_location?(new_blog_path, options)
-        Dextery.logger.error "Conflict:", "#{new_blog_path} exists and is not empty."
+        Dextery.logger.error "Conflict: #{new_blog_path} exists and is not empty."
       else
         clean_directory(new_blog_path) if options[:force]
         copy_bootstrap(new_blog_path)
@@ -15,7 +15,7 @@ module Dextery
 
     private
     def self.preserve_source_location?(path, options)
-      options[:force] && !Dir["#{path}/**/*"].empty?
+      !options[:force] && !Dir["#{path}/**/*"].empty?
     end
 
     def self.clean_directory(path)
